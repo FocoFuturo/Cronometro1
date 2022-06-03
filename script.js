@@ -7,7 +7,7 @@ var disparo =false;
 function iniciar(){
     if(disparo==false){
         relogio();
-  interval =  setInterval(relogio,1000);
+  interval =  setInterval(relogio,10);
     }
     disparo =true;
 }
