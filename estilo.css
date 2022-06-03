@@ -1,17 +1,40 @@
-.container{
+*{
+    margin: 0;
+    padding: 0;
+    margin: center;
+    flex-direction: column;
+   
+    color:white;
+   
+}
+body{
+    display:center;
+   justify-content: center;
+   flex-direction: column;
+    
+}
+body.container{
+    
+   margin:35%;
+  margin-top:15%;
+}
 
+.container{
+    
     width: 350px;
-    min-height: 36vh;
+    min-height: 30vh;
     background-color:  #0f1111;
-    display:block;
+     
     margin:200px;
-    align-items:flex-start;
+    align-items: center;
     font-size: 25px;
     box-sizing: content-box;
     border: 3px solid blue;
-    margin-left: 515px;
+    
     border-radius: 10px;
-    border-collapse: separate;
+    justify-content:center;
+    justify-items: center;    
+    
    
     
 }
@@ -21,39 +44,46 @@
     text-align: center;
 }
 .iniciar{
+    width: 70px;
+    height: 21px;
     align-items:center;
-    text-align: center;
+    justify-content: center;
     border-radius: 6px;
     background-color: rgb(15, 167, 15);
-   margin-top:50px;
+   margin-top:55px;
     cursor: pointer;
-    text-transform: uppercase;   
+    text-transform: uppercase; 
+    color:black;  
 }
 .parar{
-    align-items:wrap;
-    text-align: 10px;
+    width: 70px;
+    height: 21px;
+    align-items:center;
     border-radius: 6px;
     background-color: yellow;
     text-transform: uppercase;
     cursor: pointer;
+    color:black;  
    
 }
 .zerar{
-    align-items:wrap;
-    text-align: 10px;
+    width: 70px;
+    height: 21px;
+    align-items:center;
     border-radius: 6px;
     background-color: red;
     text-transform: uppercase;
     cursor: pointer;
+    color:black;  
 }
 .button{
 
     background-color: rgb(63, 79, 79);
     border-radius: 15px;
-    margin: 10px;
-    text-align: center;
-    flex: 1;
-    height:150px;
+    margin: 15px;
+    text-align:center;
+    
+    height:120px;
     
     
 }
