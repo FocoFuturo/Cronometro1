@@ -9,13 +9,13 @@ function iniciar() {
         relogio();
         interval = setInterval(relogio, 1000);
     }
-   
+
     disparo = true;
 }
 function parar() {
-     if(hor == 10) {
+    if (hor == 10) {
         zerar();
-     }
+    }
     clearInterval(interval);
     disparo = false;
 }
@@ -35,13 +35,13 @@ function relogio() {
         if (min == 59) {
             hor++;
             min = 0;
-            if (hor == 10 ) {
-                
-               
+            if (hor == 10) {
+
+
                 clearInterval(interval);
-                
+
             }
-            
+
         }
     }
     document.getElementById('relogio').innerText = doisDigitos(hor) + ":" + doisDigitos(min) + ":" + doisDigitos(seg);
