@@ -1,6 +1,6 @@
 var hor = 9;
-var min = 0;
-var seg = 0;
+var min = 59;
+var seg = 50;
 var interval;
 var disparo = false;
 
@@ -29,13 +29,13 @@ function zerar() {
 }
 function relogio() {
     seg++;
-    if (seg == 59) {
+    if (seg >= 59) {
         min++;
         seg = 0;
-        if (min == 59) {
+        if (min >= 59) {
             hor++;
             min = 0;
-            if (hor == 10) {
+            if (hor >= 10) {
 
 
                 clearInterval(interval);
